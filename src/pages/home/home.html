@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Clash Royale</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title>"Fiebre de Oro"</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+  <ion-label>Gender</ion-label>
+  <ion-select [(ngModel)]="gender">
+    <ion-option value="f">Female</ion-option>
+    <ion-option value="m">Male</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+ <ion-label>Gamer</ion-label>
+  <ion-select [(ngModel)]="Gamer">
+    <ion-option value="PC">Computadora</ion-option>
+    <ion-option value="Consola">Consola</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Toppings</ion-label>
+  <ion-select [(ngModel)]="toppings" multiple="true">
+    <ion-option>Bacon</ion-option>
+    <ion-option>Black Olives</ion-option>
+    <ion-option>Extra Cheese</ion-option>
+    <ion-option>Mushrooms</ion-option>
+    <ion-option>Pepperoni</ion-option>
+    <ion-option>Sausage</ion-option>
+  </ion-select>
+</ion-item>
+<ion-list>
+
+  <ion-item>
+
+    <ion-label>Pepperoni</ion-label>
+    <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-label>Sausage</ion-label>
+    <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-label>Mushrooms</ion-label>
+    <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+  </ion-item>
+
+</ion-list>
+
+   <ion-toolbar>
+    <ion-title>Scrolls with the content</ion-title>
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
